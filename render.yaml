@@ -3,7 +3,7 @@ services:
     name: vodalease-enterprise
     runtime: node
     plan: free
-    buildCommand: corepack enable && pnpm install --frozen-lockfile && pnpm build
+    buildCommand: npm install -g pnpm@10.4.1 && pnpm install --frozen-lockfile && pnpm build
     startCommand: node dist/index.js
     healthCheckPath: /
     autoDeployTrigger: commit
