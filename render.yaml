@@ -3,7 +3,7 @@ services:
     name: vodalease-enterprise
     runtime: node
     plan: free
-    buildCommand: npm install -g pnpm@9.6.0 && pnpm install --frozen-lockfile && pnpm build
+    buildCommand: npm install -g pnpm@9.6.0 && pnpm install --frozen-lockfile --prod=false && pnpm build
     startCommand: node dist/index.js
     healthCheckPath: /
     autoDeployTrigger: commit
