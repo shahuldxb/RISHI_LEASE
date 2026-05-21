@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BPMN Modeler</title>
+  <link rel="stylesheet" href="https://unpkg.com/bpmn-js@17.11.1/dist/assets/diagram-js.css" />
+  <link rel="stylesheet" href="https://unpkg.com/bpmn-js@17.11.1/dist/assets/bpmn-js.css" />
+  <link rel="stylesheet" href="https://unpkg.com/bpmn-js@17.11.1/dist/assets/bpmn-font/css/bpmn.css" />
+  <script src="https://unpkg.com/bpmn-js@17.11.1/dist/bpmn-modeler.development.js"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 100%; height: 100%; overflow: hidden; background: #f0f0f0; }
+    #canvas { width: 100%; height: 100%; }
+
+    /* Override bpmn-js palette to ensure full visibility */
+    .djs-palette {
+      background: #ffffff !important;
+      border: 1px solid #d1d5db !important;
+      border-radius: 6px !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12) !important;
+    }
+    .djs-palette .entry {
+      color: #374151 !important;
+    }
+    .djs-palette .entry:hover {
+      background: #f3f4f6 !important;
+    }
+    .djs-palette .separator {
+      border-top: 1px solid #e5e7eb !important;
+    }
+    /* Context pad */
+    .djs-context-pad {
+      background: #ffffff !important;
+      border: 1px solid #d1d5db !important;
+      border-radius: 4px !important;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15) !important;
+    }
+    /* Popup menu */
+    .djs-popup {
+      background: #ffffff !important;
+      border: 1px solid #d1d5db !important;
+      border-radius: 6px !important;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15) !important;
+    }
+    .djs-popup .entry {
+      color: #374151 !important;
+    }
+    .djs-popup .entry:hover {
+      background: #f3f4f6 !important;
+    }
+    /* Tooltip */
+    .djs-tooltip {
+      background: #1f2937 !important;
+      color: #f9fafb !important;
+      border-radius: 4px !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="canvas"></div>
+  <script>
+    var modeler = null;
+
+    function initModeler(xml) {
+      modeler = new BpmnJS({ container: '#canvas' });
+
+      modeler.on('selection.changed', function(e) {
+        var el = e.newSelection && e.newSelection.length === 1 ? e.newSelection[0] : null;
+        if (el) {
+          var bo = el.businessObject || {};
+          window.parent.postMessage({
+            type: 'selection',
+            element: {
+              id: bo.id || el.id || '',
+              name: bo.name || '',
+              elementType: (el.type || '').replace('bpmn:', ''),
+              assignee: bo.assignee || '',
+              candidateGroups: bo.candidateGroups || '',
+              dueDate: bo.dueDate || '',
+              conditionExpression: bo.conditionExpression ? (bo.conditionExpression.body || '') : ''
+            }
+          }, '*');
+        } else {
+          window.parent.postMessage({ type: 'selection', element: null }, '*');
+        }
+      });
+
+      modeler.on('commandStack.changed', function() {
+        window.parent.postMessage({ type: 'dirty' }, '*');
+      });
+
+      modeler.importXML(xml).then(function() {
+        window.parent.postMessage({ type: 'ready' }, '*');
+        setTimeout(function() {
+          try {
+            var canvas = modeler.get('canvas');
+            canvas.zoom('fit-viewport', 'auto');
+            window.parent.postMessage({ type: 'zoom', value: Math.round(canvas.zoom() * 100) }, '*');
+          } catch(e) {}
+        }, 100);
+      }).catch(function(err) {
+        window.parent.postMessage({ type: 'error', message: err.message }, '*');
+      });
+    }
+
+    // Listen for commands from the parent React component
+    window.addEventListener('message', function(e) {
+      var msg = e.data;
+      if (!msg || !msg.cmd) return;
+
+      switch (msg.cmd) {
+        case 'init':
+          initModeler(msg.xml);
+          break;
+
+        case 'loadXML':
+          if (!modeler) { initModeler(msg.xml); break; }
+          modeler.importXML(msg.xml).then(function() {
+            window.parent.postMessage({ type: 'loaded' }, '*');
+            setTimeout(function() {
+              try {
+                var canvas = modeler.get('canvas');
+                canvas.zoom('fit-viewport', 'auto');
+                window.parent.postMessage({ type: 'zoom', value: Math.round(canvas.zoom() * 100) }, '*');
+              } catch(e) {}
+            }, 50);
+          }).catch(function(err) {
+            window.parent.postMessage({ type: 'error', message: err.message }, '*');
+          });
+          break;
+
+        case 'saveXML':
+          if (!modeler) break;
+          modeler.saveXML({ format: true }).then(function(result) {
+            window.parent.postMessage({ type: 'savedXML', xml: result.xml, requestId: msg.requestId }, '*');
+          }).catch(function(err) {
+            window.parent.postMessage({ type: 'error', message: err.message }, '*');
+          });
+          break;
+
+        case 'zoom':
+          if (!modeler) break;
+          try {
+            var canvas = modeler.get('canvas');
+            if (msg.value === 'fit') {
+              canvas.zoom('fit-viewport', 'auto');
+            } else if (msg.value === 'reset') {
+              canvas.zoom(1);
+            } else {
+              canvas.zoom(msg.value);
+            }
+            window.parent.postMessage({ type: 'zoom', value: Math.round(canvas.zoom() * 100) }, '*');
+          } catch(e) {}
+          break;
+
+        case 'undo':
+          if (!modeler) break;
+          try { modeler.get('commandStack').undo(); } catch(e) {}
+          break;
+
+        case 'redo':
+          if (!modeler) break;
+          try { modeler.get('commandStack').redo(); } catch(e) {}
+          break;
+      }
+    });
+
+    // Signal to parent that the iframe is ready to receive commands.
+    // Keep sending until the parent sends 'init' (handles race condition where
+    // the React useEffect hasn't attached its message listener yet).
+    var readyInterval = setInterval(function() {
+      window.parent.postMessage({ type: 'iframeReady' }, '*');
+    }, 200);
+
+    // Stop pinging once we receive any command from the parent
+    var originalListener = window.onmessage;
+    window.addEventListener('message', function stopPing(e) {
+      if (e.data && e.data.cmd) {
+        clearInterval(readyInterval);
+        window.removeEventListener('message', stopPing);
+      }
+    });
+  </script>
+</body>
+</html>

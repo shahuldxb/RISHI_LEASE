@@ -1,0 +1,1846 @@
+{
+  "total": 128,
+  "passed": 72,
+  "failed": [
+    {
+      "route": "/dashboard",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [],
+      "sample": ""
+    },
+    {
+      "route": "/leases/new",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/leases/amortisation",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/leases/modifications",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/leases/terminations",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/cheques/bounce",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/contracts",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/contracts/history",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/contracts/documents",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/contracts/milestones",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/contracts/modifications",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/payables/invoices",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/bank/workspace",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/bank/history",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/cheques",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/analytics",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/mis/cost",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/ops/maintenance",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/ops/insurance",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/classification",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/remeasurement",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/reports/ifrs16",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/erp-export",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/sub-asset-registry",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/sub-asset-registry/transactions",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/lease-sub-assets",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/alerts",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/admin",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/maturity",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/variable-rent",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/asc842",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/leases/origination",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/leases/options-breaks",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/finance/budget-variance",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/ops/esg-carbon",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/admin/multi-entity",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/admin/lessor-credit",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/admin/alerts-reports",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/admin/scheduled-reports",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/ops/vendors",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/ops/furnished-assets",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/ops/asset-deposits",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/ops/handover-checklist",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/disclosure-notes",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/leases/renewal-engine",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/period-close",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/journal-voucher",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/transaction-engine",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/ias17-comparison",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/fx-revaluation",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/budget-vs-actual",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/admin/business-rules",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/config/coa",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/config/gl-mappings",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/config/business-rules",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/system/performance",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    }
+  ],
+  "results": [
+    {
+      "route": "/",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+      ],
+      "sample": "VL VodaLease Enterprise Features Reports Demo Get Started IFRS 16 Lease Accounting Platform Lease Accounting. Simplified. End-to-end IFRS 16 compliance with automated journal entri"
+    },
+    {
+      "route": "/landing",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+      ],
+      "sample": "VL VodaLease Enterprise Features Reports Demo Get Started IFRS 16 Lease Accounting Platform Lease Accounting. Simplified. End-to-end IFRS 16 compliance with automated journal entri"
+    },
+    {
+      "route": "/dashboard",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [],
+      "sample": ""
+    },
+    {
+      "route": "/leases",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+      ],
+      "sample": "Navigation Dashboard Lease Management Lease Register New Lease Lessor Master Lessee Master Staff Master Sub-Asset Registry Sub-Asset Txn Log Transaction Centre Contracts MIS & Anal"
+    },
+    {
+      "route": "/leases/new",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/leases/amortisation",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/leases/amortisation/blackboard",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+      ],
+      "sample": "Navigation Dashboard Lease Management Lease Register New Lease Lessor Master Lessee Master Staff Master Sub-Asset Registry Sub-Asset Txn Log Transaction Centre Contracts MIS & Anal"
+    },
+    {
+      "route": "/leases/renewals",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+      ],
+      "sample": "Navigation Dashboard Lease Management Lease Register New Lease Lessor Master Lessee Master Staff Master Sub-Asset Registry Sub-Asset Txn Log Transaction Centre Contracts MIS & Anal"
+    },
+    {
+      "route": "/leases/modifications",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/leases/transaction-centre",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+      ],
+      "sample": "Navigation Dashboard Lease Management Lease Register New Lease Lessor Master Lessee Master Staff Master Sub-Asset Registry Sub-Asset Txn Log Transaction Centre Contracts MIS & Anal"
+    },
+    {
+      "route": "/leases/detail",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Lease Register New Lease Lessor Master Lessee Master Staff Master Sub-Asset Registry Sub-Asset Txn Log Transaction Centre Contracts MIS & Anal"
+    },
+    {
+      "route": "/leases/renewal",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+      ],
+      "sample": "Navigation Dashboard Lease Management Lease Register New Lease Lessor Master Lessee Master Staff Master Sub-Asset Registry Sub-Asset Txn Log Transaction Centre Contracts MIS & Anal"
+    },
+    {
+      "route": "/leases/terminations",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/cheques/bounce",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/contracts",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/contracts/metadata-templates",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts Contract Register Metadata Templates Master Contracts Documents Milestones Modifications History MIS & Analytics Accounting Engine F"
+    },
+    {
+      "route": "/contracts/history",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/contracts/documents",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/contracts/milestones",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/contracts/modifications",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/lessee-master",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+      ],
+      "sample": "Navigation Dashboard Lease Management Lease Register New Lease Lessor Master Lessee Master Staff Master Sub-Asset Registry Sub-Asset Txn Log Transaction Centre Contracts MIS & Anal"
+    },
+    {
+      "route": "/staff-master",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Lease Register New Lease Lessor Master Lessee Master Staff Master Sub-Asset Registry Sub-Asset Txn Log Transaction Centre Contracts MIS & Anal"
+    },
+    {
+      "route": "/payables",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/payables/invoices",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/payables/payments",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/payables/journals",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/payables/approvals",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/bank/accounts",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/bank/import",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/bank/workspace",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/bank/history",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/bank/rules",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/bank-recon",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/cheques",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/workflow",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/workflows/tasks",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/workflows/monitor",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/workflows/modeler",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/workflows/escalations",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/analytics",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/mis/portfolio",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Portfolio Health Cash Flow Forecast Cost Performance AI Query Panel Custom Reports Accounting Engine Finance & Plann"
+    },
+    {
+      "route": "/mis/cashflow",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Portfolio Health Cash Flow Forecast Cost Performance AI Query Panel Custom Reports Accounting Engine Finance & Plann"
+    },
+    {
+      "route": "/mis/cost",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/mis/ai-query",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Portfolio Health Cash Flow Forecast Cost Performance AI Query Panel Custom Reports Accounting Engine Finance & Plann"
+    },
+    {
+      "route": "/mis/reports",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Portfolio Health Cash Flow Forecast Cost Performance AI Query Panel Custom Reports Accounting Engine Finance & Plann"
+    },
+    {
+      "route": "/ops/maintenance",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/ops/insurance",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/ops/esg",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/ops/documents",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/compliance/audit",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/compliance/errors",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/audit",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/accounting/amortization-master",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/accounting/ibr",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine IBR Library Lease Classification Remeasurement CPI Escalation IFRS 16 Disclosure Disclosure Notes "
+    },
+    {
+      "route": "/accounting/classification",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/remeasurement",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/cpi",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine IBR Library Lease Classification Remeasurement CPI Escalation IFRS 16 Disclosure Disclosure Notes "
+    },
+    {
+      "route": "/accounting/exemptions",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/accounting/disclosure",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine IBR Library Lease Classification Remeasurement CPI Escalation IFRS 16 Disclosure Disclosure Notes "
+    },
+    {
+      "route": "/accounting/roll-forward",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine IBR Library Lease Classification Remeasurement CPI Escalation IFRS 16 Disclosure Disclosure Notes "
+    },
+    {
+      "route": "/reports/ifrs16",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/erp-export",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/bulk",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/lessor-master",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Lease Register New Lease Lessor Master Lessee Master Staff Master Sub-Asset Registry Sub-Asset Txn Log Transaction Centre Contracts MIS & Anal"
+    },
+    {
+      "route": "/sub-asset-registry",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/sub-asset-registry/transactions",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/lease-sub-assets",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/alerts",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/admin",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/maturity",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/variable-rent",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/asc842",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/leases/origination",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/leases/options-breaks",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/finance/budget-variance",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/ops/space",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/ops/esg-carbon",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/admin/multi-entity",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/admin/lessor-credit",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/admin/alerts-reports",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/admin/scheduled-reports",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/lessor-finance",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/admin/notifications",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/admin/sso",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/admin/api-webhooks",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/ops/desk-booking",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/ops/work-orders",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/ops/vendors",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/leases/data-quality",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Lease Register New Lease Lessor Master Lessee Master Staff Master Sub-Asset Registry Sub-Asset Txn Log Transaction Centre Contracts MIS & Anal"
+    },
+    {
+      "route": "/accounting/consolidation",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/finance/budgeting",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/ops/esg-reporting",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/esg/data-entry",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "ESG Data Entry VFLESGRPT0001P001 Environmental, Social & Governance Metrics — CRUD Gen AI Audit Log Errors Alt Seq 2026 All Contracts Refresh New Entry Environmental (0) Social (0)"
+    },
+    {
+      "route": "/esg/report",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "ESG Report VFLESGRPT0002P001 Environmental, Social & Governance — Annual Summary Gen AI Audit Log Errors Alt Seq 2026 Refresh Reporting Year: 2026 Loading report data..."
+    },
+    {
+      "route": "/ai-analytics",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence AI Leas"
+    },
+    {
+      "route": "/mobile-field",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/tenant-portal",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/leases/brokers",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Lease Register New Lease Lessor Master Lessee Master Staff Master Sub-Asset Registry Sub-Asset Txn Log Transaction Centre Contracts MIS & Anal"
+    },
+    {
+      "route": "/leases/loi",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Lease Register New Lease Lessor Master Lessee Master Staff Master Sub-Asset Registry Sub-Asset Txn Log Transaction Centre Contracts MIS & Anal"
+    },
+    {
+      "route": "/leases/compare",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Lease Register New Lease Lessor Master Lessee Master Staff Master Sub-Asset Registry Sub-Asset Txn Log Transaction Centre Contracts MIS & Anal"
+    },
+    {
+      "route": "/leases/ti-allowance",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Lease Register New Lease Lessor Master Lessee Master Staff Master Sub-Asset Registry Sub-Asset Txn Log Transaction Centre Contracts MIS & Anal"
+    },
+    {
+      "route": "/admin/esignature",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/ops/furnished-assets",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/ops/asset-deposits",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/ops/handover-checklist",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/contracts/msc",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts Contract Register Metadata Templates Master Contracts Documents Milestones Modifications History MIS & Analytics Accounting Engine F"
+    },
+    {
+      "route": "/contracts/msc/1",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts Contract Register Metadata Templates Master Contracts Documents Milestones Modifications History MIS & Analytics Accounting Engine F"
+    },
+    {
+      "route": "/contracts/msc/1/print",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts Contract Register Metadata Templates Master Contracts Documents Milestones Modifications History MIS & Analytics Accounting Engine F"
+    },
+    {
+      "route": "/assets/furniture",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/assets/furniture/1",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Alerts & Reports Budgeting & ESG Configuration Centre AI & Intelligence System "
+    },
+    {
+      "route": "/accounting/disclosure-notes",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/leases/renewal-engine",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/period-close",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/journal-voucher",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/transaction-engine",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/settings",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine IBR Library Lease Classification Remeasurement CPI Escalation IFRS 16 Disclosure Disclosure Notes "
+    },
+    {
+      "route": "/accounting/ias17-comparison",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/fx-revaluation",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/disclosure-pack",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine IBR Library Lease Classification Remeasurement CPI Escalation IFRS 16 Disclosure Disclosure Notes "
+    },
+    {
+      "route": "/accounting/budget-vs-actual",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/accounting/maturity-ladder",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Navigation Dashboard Lease Management Contracts MIS & Analytics Accounting Engine Finance & Planning Maturity Ladder Alerts & Reports Budgeting & ESG Configuration Centre AI & Inte"
+    },
+    {
+      "route": "/accounting/multi-standard",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Multi-Standard Comparison VFLMULSTD0001P001 IFRS 16 | ASC 842 | IPSAS 43 — parallel computation Audit Log Errors Alt Seq Period Start Period End Lease (for per-lease tab) Select a "
+    },
+    {
+      "route": "/admin/business-rules",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/config/coa",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/config/gl-mappings",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42",
+        "[API Mutation Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/config/business-rules",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/system/performance",
+      "status": 200,
+      "ok": false,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": ""
+    },
+    {
+      "route": "/leases/modification-wizard",
+      "status": 200,
+      "ok": true,
+      "consoleErrors": [
+        "[API Query Error] TRPCClientError: Failed to fetch\n    at TRPCClientError2.from (http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2030:12)\n    at http://localhost:3000/@fs/C:/Users/rishi/OneDrive/Desktop/leasing-main/leasing-main/node_modules/.vite/deps/chunk-GIAR3RVC.js?v=32636305:2432:42"
+      ],
+      "sample": "Lease Modification Wizard VFLLSMOD0001P001 IFRS 16 Para 44–46 — Remeasurement & GL Journal Generation Audit Log Errors Alt Seq 1 Select Lease 2 New Terms 3 Review Impact 4 Confirm "
+    }
+  ]
+}

@@ -1,0 +1,727 @@
+{
+  "VFLNEWLEA0001P001": {
+    "screenTitle": "New Lease — Initial Recognition (Day 1 Entry)",
+    "rules": [
+      {
+        "category_code": "CALCULATION",
+        "rule_name": "Lease Liability Calculation",
+        "rule_description": "The lease liability is initially measured at the present value of the lease payments that are not paid at the commencement date.",
+        "formula": "lease_liability = PV(lease_payments, incremental_borrowing_rate, lease_term)",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.26",
+        "priority": 10
+      },
+      {
+        "category_code": "CALCULATION",
+        "rule_name": "ROU Asset Initial Measurement",
+        "rule_description": "The right-of-use asset is initially measured at cost, which comprises the amount of the initial measurement of the lease liability, any lease payments made at or before the commencement date, any initial direct costs incurred, and an estimate of costs to dismantle or restore, less any lease incentives received.",
+        "formula": "rou_asset = lease_liability + payments_at_or_before_commencement + initial_direct_costs - lease_incentives_received + restoration_costs",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.24",
+        "priority": 20
+      },
+      {
+        "category_code": "VALIDATION",
+        "rule_name": "Discount Rate Positive",
+        "rule_description": "The incremental borrowing rate (IBR) or rate implicit in the lease must be a positive value to ensure proper present value calculation.",
+        "formula": "incremental_borrowing_rate > 0 AND incremental_borrowing_rate < 1",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.26",
+        "priority": 5
+      },
+      {
+        "category_code": "VALIDATION",
+        "rule_name": "Lease Term Non-Zero",
+        "rule_description": "The lease term must be greater than zero to recognize a lease liability and ROU asset.",
+        "formula": "lease_term > 0",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.18",
+        "priority": 6
+      },
+      {
+        "category_code": "JV_PATTERN",
+        "rule_name": "Day 1 Initial Recognition JV",
+        "rule_description": "Journal entry to recognize the Right-of-Use Asset and Lease Liability at the commencement date.",
+        "formula": null,
+        "jv_debit_account": "14XXX_ROU_Asset",
+        "jv_credit_account": "25XXX_Lease_Liability",
+        "ifrs_reference": "IFRS 16.22",
+        "priority": 30
+      },
+      {
+        "category_code": "STANDARD_REF",
+        "rule_name": "Definition of Lease Liability",
+        "rule_description": "At the commencement date, a lessee shall recognise a lease liability and a right-of-use asset.",
+        "formula": null,
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.22",
+        "priority": 1
+      },
+      {
+        "category_code": "STANDARD_REF",
+        "rule_name": "Initial Direct Costs Inclusion",
+        "rule_description": "Initial direct costs are costs that would not have been incurred if the lease had not been obtained.",
+        "formula": null,
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.24(b)",
+        "priority": 25
+      },
+      {
+        "category_code": "STANDARD_REF",
+        "rule_name": "Lease Incentives Treatment",
+        "rule_description": "Lease incentives received are deducted from the cost of the ROU asset.",
+        "formula": null,
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.24(d)",
+        "priority": 26
+      },
+      {
+        "category_code": "CALCULATION",
+        "rule_name": "Lease Payments Definition",
+        "rule_description": "Lease payments included in the measurement of the lease liability comprise fixed payments, variable lease payments that depend on an index or a rate, residual value guarantees, purchase option exercise price (if reasonably certain), and termination penalties (if lease term reflects exercise of option to terminate).",
+        "formula": "lease_payments = fixed_payments + variable_payments_indexed + residual_value_guarantees + purchase_option_price + termination_penalties",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.27",
+        "priority": 15
+      },
+      {
+        "category_code": "VALIDATION",
+        "rule_name": "Lease Start Date Required",
+        "rule_description": "A commencement date is required for initial recognition of the lease.",
+        "formula": "commencement_date IS NOT NULL",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.22",
+        "priority": 4
+      }
+    ]
+  },
+  "VFLAMORT0001P001": {
+    "screenTitle": "Amortisation Schedule — Monthly Entries",
+    "rules": [
+      {
+        "category_code": "CALCULATION",
+        "rule_name": "Interest Expense Calculation",
+        "rule_description": "Calculates the monthly interest expense on the lease liability using the effective interest method. Interest is calculated on the opening balance of the lease liability for the period.",
+        "formula": "interest_expense = opening_lease_liability_balance * (discount_rate / 12)",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.36",
+        "priority": 10
+      },
+      {
+        "category_code": "CALCULATION",
+        "rule_name": "Principal Reduction Calculation",
+        "rule_description": "Determines the portion of the lease payment that reduces the principal balance of the lease liability. This is the total lease payment for the period less the calculated interest expense.",
+        "formula": "principal_reduction = monthly_lease_payment - interest_expense",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.36",
+        "priority": 20
+      },
+      {
+        "category_code": "CALCULATION",
+        "rule_name": "ROU Asset Depreciation",
+        "rule_description": "Calculates the monthly depreciation expense for the Right-of-Use (ROU) asset on a straight-line basis over the shorter of the lease term or the useful life of the underlying asset.",
+        "formula": "depreciation_expense = (initial_ROU_asset_cost - residual_value) / (lease_term_in_months)",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.32",
+        "priority": 30
+      },
+      {
+        "category_code": "VALIDATION",
+        "rule_name": "Lease Liability Balance Check",
+        "rule_description": "Ensures that the lease liability balance does not become negative at any point during the lease term.",
+        "formula": "ending_lease_liability_balance >= 0",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.36",
+        "priority": 50
+      },
+      {
+        "category_code": "JV_PATTERN",
+        "rule_name": "Interest Expense Journal Entry",
+        "rule_description": "Journal entry to record the monthly interest expense on the lease liability.",
+        "formula": null,
+        "jv_debit_account": "6XXX Interest Expense - Lease",
+        "jv_credit_account": "2XXX Lease Liability",
+        "ifrs_reference": "IFRS 16.36",
+        "priority": 60
+      },
+      {
+        "category_code": "JV_PATTERN",
+        "rule_name": "Lease Payment Journal Entry",
+        "rule_description": "Journal entry to record the monthly cash payment for the lease, reducing both the lease liability (principal) and cash.",
+        "formula": null,
+        "jv_debit_account": "2XXX Lease Liability",
+        "jv_credit_account": "1XXX Cash/Bank",
+        "ifrs_reference": "IFRS 16.36",
+        "priority": 70
+      },
+      {
+        "category_code": "JV_PATTERN",
+        "rule_name": "ROU Asset Depreciation Journal Entry",
+        "rule_description": "Journal entry to record the monthly depreciation expense for the Right-of-Use asset.",
+        "formula": null,
+        "jv_debit_account": "6XXX Depreciation Expense - ROU Asset",
+        "jv_credit_account": "1XXX Accumulated Depreciation - ROU Asset",
+        "ifrs_reference": "IFRS 16.32",
+        "priority": 80
+      },
+      {
+        "category_code": "STANDARD_REF",
+        "rule_name": "Measurement of Lease Liability",
+        "rule_description": "A lessee measures the lease liability at the present value of the lease payments that are not paid at that date.",
+        "formula": null,
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.26",
+        "priority": 90
+      },
+      {
+        "category_code": "STANDARD_REF",
+        "rule_name": "Subsequent Measurement of Lease Liability",
+        "rule_description": "After the commencement date, a lessee measures the lease liability by increasing the carrying amount to reflect interest on the lease liability and reducing the carrying amount to reflect the lease payments made.",
+        "formula": null,
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.36",
+        "priority": 95
+      },
+      {
+        "category_code": "STANDARD_REF",
+        "rule_name": "Subsequent Measurement of ROU Asset",
+        "rule_description": "After the commencement date, a lessee measures the right-of-use asset applying a cost model, unless it applies the revaluation model or fair value model. The cost model requires deducting accumulated depreciation and accumulated impairment losses.",
+        "formula": null,
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.30",
+        "priority": 100
+      }
+    ]
+  },
+  "VFLRMSENG0001P001": {
+    "screenTitle": "Remeasurement Engine",
+    "rules": [
+      {
+        "category_code": "CALCULATION",
+        "rule_name": "Recalculate Lease Liability",
+        "rule_description": "Recalculates the lease liability as the present value of the revised remaining lease payments, discounted using the revised discount rate at the remeasurement date.",
+        "formula": "new_lease_liability = PV(revised_remaining_payments, revised_discount_rate, remaining_term)",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.39",
+        "priority": 10
+      },
+      {
+        "category_code": "CALCULATION",
+        "rule_name": "Adjust ROU Asset - Liability Increase",
+        "rule_description": "Increases the Right-of-Use (ROU) asset when the lease liability increases due to remeasurement.",
+        "formula": "new_rou_asset = old_rou_asset + (new_lease_liability - old_lease_liability)",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.40(a)",
+        "priority": 20
+      },
+      {
+        "category_code": "CALCULATION",
+        "rule_name": "Adjust ROU Asset - Liability Decrease",
+        "rule_description": "Decreases the Right-of-Use (ROU) asset when the lease liability decreases due to remeasurement. If ROU asset is reduced to zero, the remaining decrease is recognized in profit or loss.",
+        "formula": "rou_asset_adjustment = new_lease_liability - old_lease_liability; if rou_asset_adjustment < 0 then new_rou_asset = max(0, old_rou_asset + rou_asset_adjustment); profit_loss_impact = min(0, old_rou_asset + rou_asset_adjustment)",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.40(b)",
+        "priority": 25
+      },
+      {
+        "category_code": "VALIDATION",
+        "rule_name": "Discount Rate Positive",
+        "rule_description": "The revised discount rate used for remeasurement must be a positive value.",
+        "formula": "revised_discount_rate > 0",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.B4",
+        "priority": 5
+      },
+      {
+        "category_code": "VALIDATION",
+        "rule_name": "Remeasurement Date After Commencement",
+        "rule_description": "The remeasurement effective date must be on or after the lease commencement date.",
+        "formula": "remeasurement_date >= lease_commencement_date",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.39",
+        "priority": 8
+      },
+      {
+        "category_code": "JV_PATTERN",
+        "rule_name": "JV - Liability Increase",
+        "rule_description": "Journal entry to record an increase in lease liability and corresponding increase in ROU asset.",
+        "formula": null,
+        "jv_debit_account": "ROU_ASSET_GL_CODE",
+        "jv_credit_account": "LEASE_LIABILITY_GL_CODE",
+        "ifrs_reference": "IFRS 16.40(a)",
+        "priority": 30
+      },
+      {
+        "category_code": "JV_PATTERN",
+        "rule_name": "JV - Liability Decrease (ROU Asset)",
+        "rule_description": "Journal entry to record a decrease in lease liability and corresponding decrease in ROU asset (up to its carrying amount).",
+        "formula": null,
+        "jv_debit_account": "LEASE_LIABILITY_GL_CODE",
+        "jv_credit_account": "ROU_ASSET_GL_CODE",
+        "ifrs_reference": "IFRS 16.40(b)",
+        "priority": 35
+      },
+      {
+        "category_code": "JV_PATTERN",
+        "rule_name": "JV - Liability Decrease (P&L Impact)",
+        "rule_description": "Journal entry to record a decrease in lease liability when the ROU asset has been reduced to zero, with the excess recognized in profit or loss.",
+        "formula": null,
+        "jv_debit_account": "LEASE_LIABILITY_GL_CODE",
+        "jv_credit_account": "P&L_GAIN_LOSS_GL_CODE",
+        "ifrs_reference": "IFRS 16.40(b)",
+        "priority": 40
+      },
+      {
+        "category_code": "STANDARD_REF",
+        "rule_name": "Remeasurement Triggers",
+        "rule_description": "A lessee shall remeasure the lease liability if there is a change in the lease term, a change in the assessment of an option to purchase the underlying asset, a change in the amounts expected to be payable under a residual value guarantee, or a change in future lease payments resulting from a change in an index or a rate, or a change in the amounts expected to be payable under a residual value guarantee.",
+        "formula": null,
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.39",
+        "priority": 1
+      },
+      {
+        "category_code": "STANDARD_REF",
+        "rule_name": "Prospective Application",
+        "rule_description": "Changes in lease payments are accounted for prospectively from the effective date of the remeasurement. Previous accounting entries are not reversed.",
+        "formula": null,
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.42",
+        "priority": 45
+      }
+    ]
+  },
+  "VFLLSMOD0001P001": {
+    "screenTitle": "Lease Modification",
+    "rules": [
+      {
+        "category_code": "VALIDATION",
+        "rule_name": "SeparateLeaseCriteriaCheck",
+        "rule_description": "Determine if a modification is accounted for as a separate lease. This occurs if the modification increases the scope of the lease by adding the right to use one or more underlying assets, and the consideration for the modification reflects a stand-alone price for the increase in scope.",
+        "formula": null,
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.44",
+        "priority": 90
+      },
+      {
+        "category_code": "CALCULATION",
+        "rule_name": "RemeasurementNewLeaseLiability",
+        "rule_description": "When a lease modification is not a separate lease, remeasure the lease liability by discounting the revised lease payments using a revised discount rate.",
+        "formula": "new_lease_liability = PV(revised_lease_payments, revised_discount_rate, remaining_lease_term)",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.42, IFRS 16.45(a)",
+        "priority": 85
+      },
+      {
+        "category_code": "CALCULATION",
+        "rule_name": "ROUAssetAdjustmentOnRemeasurement",
+        "rule_description": "When a lease liability is remeasured due to a modification, the corresponding ROU asset is adjusted. For scope decrease, a portion of the ROU asset is derecognised.",
+        "formula": "ROU_asset_adjustment = new_lease_liability - old_lease_liability",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.45(b), IFRS 16.46(a)",
+        "priority": 80
+      },
+      {
+        "category_code": "JV_PATTERN",
+        "rule_name": "JV_RemeasurementIncrease",
+        "rule_description": "Journal entry for an increase in lease liability and ROU asset due to modification (e.g., term extension, payment increase).",
+        "formula": null,
+        "jv_debit_account": "ROU_ASSET",
+        "jv_credit_account": "LEASE_LIABILITY",
+        "ifrs_reference": "IFRS 16.45(b)",
+        "priority": 75
+      },
+      {
+        "category_code": "JV_PATTERN",
+        "rule_name": "JV_RemeasurementDecrease",
+        "rule_description": "Journal entry for a decrease in lease liability and ROU asset due to modification (e.g., term reduction, payment decrease).",
+        "formula": null,
+        "jv_debit_account": "LEASE_LIABILITY",
+        "jv_credit_account": "ROU_ASSET",
+        "ifrs_reference": "IFRS 16.45(b)",
+        "priority": 75
+      },
+      {
+        "category_code": "JV_PATTERN",
+        "rule_name": "JV_ScopeDecreaseGainLoss",
+        "rule_description": "Journal entry for derecognition of ROU asset and lease liability due to a scope decrease, with any resulting gain or loss recognized in profit or loss.",
+        "formula": null,
+        "jv_debit_account": "LEASE_LIABILITY, CASH_RECEIVED_FROM_LESSEE_FOR_TERMINATION, GAIN_ON_MODIFICATION",
+        "jv_credit_account": "ROU_ASSET, LOSS_ON_MODIFICATION",
+        "ifrs_reference": "IFRS 16.46(a)",
+        "priority": 70
+      },
+      {
+        "category_code": "STANDARD_REF",
+        "rule_name": "ModificationNotSeparateLease",
+        "rule_description": "For a lease modification that is not accounted for as a separate lease, a lessee shall remeasure the lease liability by discounting the revised lease payments using a revised discount rate.",
+        "formula": null,
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.45",
+        "priority": 95
+      },
+      {
+        "category_code": "STANDARD_REF",
+        "rule_name": "ScopeDecreaseAccounting",
+        "rule_description": "When a lease modification decreases the scope of the lease, the lessee shall decrease the carrying amount of the right-of-use asset to reflect the partial or full termination of the lease, and recognise any gain or loss relating to the partial or full termination in profit or loss.",
+        "formula": null,
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.46(a)",
+        "priority": 90
+      },
+      {
+        "category_code": "VALIDATION",
+        "rule_name": "RevisedDiscountRateRequired",
+        "rule_description": "A revised discount rate must be determined for all lease modifications that are not treated as separate leases. This rate should be the discount rate at the effective date of the modification, reflecting the remaining lease term and revised lease payments.",
+        "formula": null,
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.45(a)",
+        "priority": 88
+      },
+      {
+        "category_code": "CALCULATION",
+        "rule_name": "GainLossOnScopeDecrease",
+        "rule_description": "Calculate the gain or loss recognized in profit or loss when a lease modification results in a scope decrease. This is the difference between the derecognized portion of the lease liability and the derecognized portion of the ROU asset.",
+        "formula": "gain_loss = (old_lease_liability - new_lease_liability) - (old_ROU_asset_proportion * old_ROU_asset_carrying_amount)",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.46(a)",
+        "priority": 72
+      }
+    ]
+  },
+  "VFACC-PERDCLOSE-001": {
+    "screenTitle": "Period-End Close — Monthly Closing Entries",
+    "rules": [
+      {
+        "category_code": "CALCULATION",
+        "rule_name": "Monthly Depreciation Expense",
+        "rule_description": "Calculates the monthly depreciation expense for the Right-of-Use (ROU) asset using a straight-line method over the shorter of the lease term or the useful life of the underlying asset.",
+        "formula": "monthly_depreciation = (initial_ROU_asset_cost - residual_value) / min(lease_term_in_months, useful_life_in_months)",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.32",
+        "priority": 10
+      },
+      {
+        "category_code": "CALCULATION",
+        "rule_name": "Monthly Interest Expense",
+        "rule_description": "Calculates the monthly interest expense on the lease liability based on the opening balance of the lease liability and the implicit interest rate (or incremental borrowing rate).",
+        "formula": "monthly_interest_expense = opening_lease_liability_balance * (discount_rate / 12)",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.36",
+        "priority": 15
+      },
+      {
+        "category_code": "VALIDATION",
+        "rule_name": "Lease Status Active",
+        "rule_description": "Ensures that only leases with an 'Active' status are included in the period-end closing entries.",
+        "formula": null,
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.BC222",
+        "priority": 5
+      },
+      {
+        "category_code": "VALIDATION",
+        "rule_name": "Journal Entry Balance Check",
+        "rule_description": "Verifies that the total debits equal the total credits for all generated monthly journal entries to ensure accounting balance.",
+        "formula": "sum(debits) == sum(credits)",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "General Accounting Principle",
+        "priority": 90
+      },
+      {
+        "category_code": "JV_PATTERN",
+        "rule_name": "Depreciation JV",
+        "rule_description": "Journal entry for monthly depreciation of the Right-of-Use asset.",
+        "formula": null,
+        "jv_debit_account": "61000 - Depreciation Expense - ROU Asset",
+        "jv_credit_account": "19000 - Accumulated Depreciation - ROU Asset",
+        "ifrs_reference": "IFRS 16.32",
+        "priority": 20
+      },
+      {
+        "category_code": "JV_PATTERN",
+        "rule_name": "Interest Expense JV",
+        "rule_description": "Journal entry for monthly interest expense on the lease liability.",
+        "formula": null,
+        "jv_debit_account": "62000 - Interest Expense - Lease Liability",
+        "jv_credit_account": "20100 - Lease Liability",
+        "ifrs_reference": "IFRS 16.36",
+        "priority": 25
+      },
+      {
+        "category_code": "JV_PATTERN",
+        "rule_name": "Lease Payment Application JV",
+        "rule_description": "Journal entry to record the cash payment and reduce the lease liability.",
+        "formula": null,
+        "jv_debit_account": "20100 - Lease Liability",
+        "jv_credit_account": "10100 - Cash/Bank",
+        "ifrs_reference": "IFRS 16.36",
+        "priority": 30
+      },
+      {
+        "category_code": "STANDARD_REF",
+        "rule_name": "Subsequent Measurement of Lease Liability",
+        "rule_description": "After initial recognition, a lessee shall measure the lease liability by: (a) increasing the carrying amount to reflect interest on the lease liability; (b) reducing the carrying amount to reflect the lease payments made; and (c) remeasuring the carrying amount to reflect any reassessment or lease modifications.",
+        "formula": null,
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.36",
+        "priority": 40
+      },
+      {
+        "category_code": "STANDARD_REF",
+        "rule_name": "Subsequent Measurement of ROU Asset",
+        "rule_description": "After the commencement date, a lessee shall measure the right-of-use asset applying a cost model. The cost model requires a lessee to measure the right-of-use asset at cost less any accumulated depreciation and any accumulated impairment losses, and adjusted for any remeasurement of the lease liability.",
+        "formula": null,
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.29, IFRS 16.30",
+        "priority": 35
+      },
+      {
+        "category_code": "VALIDATION",
+        "rule_name": "All Active Leases Processed",
+        "rule_description": "Confirms that all active leases as of the closing date have generated the required monthly entries.",
+        "formula": null,
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.49",
+        "priority": 80
+      }
+    ]
+  },
+  "VFLLSECLS0001P001": {
+    "screenTitle": "Lease Classification",
+    "rules": [
+      {
+        "category_code": "VALIDATION",
+        "rule_name": "LeaseTermEconomicLifeRatio",
+        "rule_description": "If the lease term is for the major part of the economic life of the underlying asset, it is classified as a finance lease. This is often interpreted as 75% or more.",
+        "formula": "lease_term_years / economic_life_years >= 0.75",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.63(b)",
+        "priority": 80
+      },
+      {
+        "category_code": "VALIDATION",
+        "rule_name": "PVPaymentsFairValueRatio",
+        "rule_description": "If the present value of the lease payments amounts to at least substantially all of the fair value of the underlying asset, it is classified as a finance lease. This is often interpreted as 90% or more.",
+        "formula": "PV(lease_payments, discount_rate, lease_term) / fair_value_asset >= 0.90",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.63(d)",
+        "priority": 85
+      },
+      {
+        "category_code": "VALIDATION",
+        "rule_name": "TransferOfOwnershipTest",
+        "rule_description": "A lease is classified as a finance lease if it transfers ownership of the underlying asset to the lessee by the end of the lease term.",
+        "formula": "transfer_ownership_flag == true",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.63(a)",
+        "priority": 90
+      },
+      {
+        "category_code": "VALIDATION",
+        "rule_name": "PurchaseOptionTest",
+        "rule_description": "A lease is classified as a finance lease if the lessee has an option to purchase the underlying asset at a price that is expected to be sufficiently lower than the fair value at the date the option becomes exercisable for it to be reasonably certain, at the inception date, that the option will be exercised.",
+        "formula": "purchase_option_exercisable_flag == true AND purchase_option_price < (fair_value_asset_at_exercise * certainty_threshold)",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.63(c)",
+        "priority": 88
+      },
+      {
+        "category_code": "VALIDATION",
+        "rule_name": "SpecializedNatureTest",
+        "rule_description": "A lease is classified as a finance lease if the underlying asset is of such a specialised nature that only the lessee can use it without major modifications.",
+        "formula": "specialized_asset_flag == true",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.63(e)",
+        "priority": 75
+      },
+      {
+        "category_code": "STANDARD_REF",
+        "rule_name": "IndicatorsOfFinanceLease",
+        "rule_description": "IFRS 16.64 provides additional indicators that individually or in combination could lead to a lease being classified as a finance lease.",
+        "formula": null,
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.64",
+        "priority": 60
+      },
+      {
+        "category_code": "CALCULATION",
+        "rule_name": "LeaseClassificationDecision",
+        "rule_description": "A lease is classified as a finance lease if any of the primary classification tests (transfer of ownership, purchase option, lease term ratio, PV payments ratio, specialized asset) are met. Otherwise, it is an operating lease.",
+        "formula": "IF (transfer_ownership_flag OR purchase_option_exercisable_flag OR (lease_term_years / economic_life_years >= 0.75) OR (PV(lease_payments, discount_rate, lease_term) / fair_value_asset >= 0.90) OR specialized_asset_flag) THEN 'Finance Lease' ELSE 'Operating Lease'",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.63",
+        "priority": 95
+      },
+      {
+        "category_code": "STANDARD_REF",
+        "rule_name": "SubstanceOverForm",
+        "rule_description": "IFRS 16.65 states that the classification of leases is based on the extent to which substantially all the risks and rewards incidental to ownership of an underlying asset are transferred. Risks include possibilities of losses from idle capacity or technological obsolescence and variations in return due to changing economic conditions. Rewards may be represented by the expectation of profitable operation over the asset's economic life and of gain from appreciation in value or realisation of a residual value.",
+        "formula": null,
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.65",
+        "priority": 70
+      },
+      {
+        "category_code": "STANDARD_REF",
+        "rule_name": "LeaseClassificationByLessee",
+        "rule_description": "IFRS 16.66 clarifies that the classification of a lease as a finance lease or an operating lease depends on the substance of the transaction rather than the form of the contract.",
+        "formula": null,
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.66",
+        "priority": 65
+      }
+    ]
+  },
+  "VFLIFRDSC0001P001": {
+    "screenTitle": "IFRS 16 Disclosure Notes",
+    "rules": [
+      {
+        "category_code": "CALCULATION",
+        "rule_name": "Maturity Analysis - Undiscounted Lease Payments",
+        "rule_description": "Calculates the total undiscounted lease payments for each maturity bucket (e.g., 1 year, 2-5 years, >5 years) as required for disclosure.",
+        "formula": "Undiscounted_Payments_Bucket = SUM(Lease_Payments_in_Bucket)",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.58",
+        "priority": 90
+      },
+      {
+        "category_code": "CALCULATION",
+        "rule_name": "ROU Asset Depreciation Expense",
+        "rule_description": "Calculates the depreciation expense for Right-of-Use assets for the reporting period.",
+        "formula": "Depreciation_Expense = (ROU_Asset_Cost - Residual_Value) / Useful_Life_of_ROU_Asset",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.53(b)",
+        "priority": 85
+      },
+      {
+        "category_code": "CALCULATION",
+        "rule_name": "Interest Expense on Lease Liabilities",
+        "rule_description": "Calculates the interest expense on lease liabilities for the reporting period using the effective interest method.",
+        "formula": "Interest_Expense = Opening_Lease_Liability_Balance * Discount_Rate",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.53(a)",
+        "priority": 88
+      },
+      {
+        "category_code": "VALIDATION",
+        "rule_name": "Weighted Average IBR Validity",
+        "rule_description": "Ensures the calculated weighted average incremental borrowing rate (IBR) is a positive value.",
+        "formula": "Weighted_Average_IBR > 0",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.53(g)",
+        "priority": 70
+      },
+      {
+        "category_code": "STANDARD_REF",
+        "rule_name": "Short-term Lease Exemption Disclosure",
+        "rule_description": "Requires disclosure of the expense relating to short-term leases for which the recognition exemption is applied.",
+        "formula": null,
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.53(c)",
+        "priority": 95
+      },
+      {
+        "category_code": "STANDARD_REF",
+        "rule_name": "Low-value Lease Exemption Disclosure",
+        "rule_description": "Requires disclosure of the expense relating to leases of low-value assets for which the recognition exemption is applied.",
+        "formula": null,
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.53(d)",
+        "priority": 95
+      },
+      {
+        "category_code": "CALCULATION",
+        "rule_name": "ROU Asset Rollforward - Closing Balance",
+        "rule_description": "Calculates the closing balance of ROU assets for the period, considering opening balance, additions, depreciation, and impairments.",
+        "formula": "Closing_ROU_Balance = Opening_ROU_Balance + Additions - Depreciation - Impairments",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.53(e)",
+        "priority": 92
+      },
+      {
+        "category_code": "CALCULATION",
+        "rule_name": "Lease Liability Rollforward - Closing Balance",
+        "rule_description": "Calculates the closing balance of lease liabilities for the period, considering opening balance, interest, payments, and new leases.",
+        "formula": "Closing_Lease_Liability = Opening_Lease_Liability + Interest_Expense - Lease_Payments_Made + New_Lease_Liabilities",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.53(f)",
+        "priority": 93
+      },
+      {
+        "category_code": "STANDARD_REF",
+        "rule_name": "Cash Outflow Disclosure",
+        "rule_description": "Requires disclosure of total cash outflows for leases for the reporting period.",
+        "formula": null,
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.53(h)",
+        "priority": 90
+      },
+      {
+        "category_code": "VALIDATION",
+        "rule_name": "Lease Term Consistency",
+        "rule_description": "Ensures that the lease term used for ROU asset depreciation is consistent with the term used for lease liability calculation, unless a shorter useful life applies.",
+        "formula": "Lease_Term_ROU <= Lease_Term_Liability",
+        "jv_debit_account": null,
+        "jv_credit_account": null,
+        "ifrs_reference": "IFRS 16.32, IFRS 16.53(e)",
+        "priority": 75
+      }
+    ]
+  }
+}

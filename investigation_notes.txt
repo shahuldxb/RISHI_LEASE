@@ -1,0 +1,19 @@
+Investigation: Send Monthly JVs Failure
+
+Network Logs Analysis:
+- persistAmortisationSchedule: returns 200 OK with {"rows_saved":36,"status":"persisted"} or {"status":"already_exists"}
+- journalVoucher.generateMonthly: returns 200 OK with {"generated_count":0}
+
+The SP is NOT failing with an error - it's returning generated_count: 0.
+
+Root Cause: The SP (sp_GenerateMonthlyJVs) generates 0 JVs because:
+1. It uses period_year=2026, period_month=5 (current month May 2026)
+2. The SP looks for rows in lease.amortisation_schedule WHERE YEAR(period_date)=@period_year AND MONTH(period_date)=@period_month
+3. The lease starts Sept 2026 (period 1 = 01 Sept 2026 as shown in screenshot)
+4. There are NO amortisation schedule rows for May 2026 - the lease hasn't started yet!
+
+So the "failure" is actually the SP correctly finding no rows to process for the current month.
+The user needs to be able to select WHICH periods to generate JVs for, not just the current month.
+
+Additionally: The button currently sends the CURRENT month (May 2026), but the lease schedule starts in Sept 2026.
+The user wants to select specific rows from the amortisation schedule and generate JVs for those selected periods.
